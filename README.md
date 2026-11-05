@@ -94,11 +94,6 @@ This repository documents core engineering contributions and technical audits ac
 * #### [`[BUG]: Phishing URL injection via improper hostname validation in LinkedInProfileValidator`](https://github.com/AOSSIE-Org/Gitcord-GithubDiscordBot/issues/87)
   - **Status**: `Closed` ![Closed](https://img.shields.io/badge/Status-Closed-cb2431.svg?style=flat-square)
   - **Severity & Architectural Impact**: **High (Application Security / SSRF & Phishing)**. Identified flawed regular expressions within the LinkedIn profile validator that checked prefix matching rather than strict domain boundaries, permitting spoofed subdomains (e.g., `linkedin.com.attacker.com`) to bypass validation.
-
-* #### [`[FEATURE]: Public channel announcements for role promotions and milestones`](https://github.com/AOSSIE-Org/Gitcord-GithubDiscordBot/issues/69)
-  - **Status**: `Closed` ![Closed](https://img.shields.io/badge/Status-Closed-cb2431.svg?style=flat-square)
-  - **Severity & Architectural Impact**: **Enhancement (Community Engagement & Notification Architecture)**. Architected an event-driven broadcast system for automated milestone recognition, specifying deduplication windows to prevent channel spam during rapid tier promotions.
-
 ---
 
 ## 📈 Contribution Statistics
